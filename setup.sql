@@ -1,5 +1,5 @@
-CREATE DATABASE travel_system;
-USE travel_system;
+CREATE DATABASE fast_travel;
+USE fast_travel;
 
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
