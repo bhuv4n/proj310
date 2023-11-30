@@ -92,7 +92,7 @@
     <body>
         <div class="flex-container">
             <div class="content-container">
-                <form action="login_process.php" method="post">
+                <form action="register_process.php" method="post">
                     <h1> Sign up </h1>
                     <br>
                     <br>
