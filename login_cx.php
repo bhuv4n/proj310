@@ -59,7 +59,7 @@
             }
 
             .subtitle {
-                font-size: 11px;
+                font-size: 13px;
                 color: grey;
             }
 
@@ -68,7 +68,7 @@
                 border-bottom: solid rgb(143, 143, 143) 1px;
                 margin-bottom: 30px;
                 background: none;
-                color: rgba(255, 255, 255, 0.555);
+                color: white;
                 height: 35px;
                 width: 300px;
             }
@@ -96,11 +96,11 @@
                     <h1> CX Login </h1>
                     <br>
                     <br>
-                    <span class="subtitle">USERNAME</span>
+                    <span class="subtitle">Username</span>
                     <br>
                     <input type="text" name="username" value="">
                     <br>
-                    <span class="subtitle">PASSWORD</span>
+                    <span class="subtitle">Password</span>
                     <br>
                     <input type="password" name="password" value="">
                     <br>
