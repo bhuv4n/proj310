@@ -30,7 +30,7 @@
         margin-left: 20px;
       }
     </style>
-    <title>Orange Buttons</title>
+    <title>Login</title>
     <script>
       function rcx() {
         window.location.href = 'login_cx.html';
@@ -48,7 +48,7 @@
       <br>
       <br>
       <br>
-      <p style="font-size: 14px; color:grey;">* Not sure? Please <a style="color:grey;" href="contact.php"> contact us. </a>
+      <p style="font-size: 14px; color:grey;">* Don't have an account? Please <a style="color:grey;" href="register.php"> register.</a>
       </p>
     </div>
   </body>
