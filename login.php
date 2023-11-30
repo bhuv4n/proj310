@@ -33,11 +33,11 @@
     <title>Login</title>
     <script>
       function rcx() {
-        window.location.href = 'login_cx.html';
+        window.location.href = 'login_cx.php';
       }
 
       function rsu() {
-        window.location.href = 'login_su.html';
+        window.location.href = 'login_su.php';
       }
     </script>
   </head>

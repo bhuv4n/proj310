@@ -29,7 +29,7 @@ if (mysqli_num_rows($cart_result) > 0) {
             break;
         }
 
-        $insert_order_query = "INSERT INTO orders (user_id, tour_id, travelers, location_id) VALUES ($user_id, $tour_id, $travelers, $location_id)";
+        $insert_order_query = "INSERT INTO orders (user_id, tour_id, travelers) VALUES ($user_id, $tour_id, $travelers)";
         if (!mysqli_query($conn, $insert_order_query)) {
             $success = false;
             break;

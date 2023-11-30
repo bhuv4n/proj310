@@ -108,7 +108,11 @@
                     <br>
                     <input type="password" name="password" value="">
                     <br>
+		    <span class="subtitle">Phone Number</span>
                     <br>
+                    <input type="text" name="phone" value="">
+                    <br>
+<br>
                     <input type="submit" value="SUBMIT" class="submit-btn">
                     <br>
 		    <p style="font-size: 12px; color:grey;">* Administrators cannot reset their passwords.  <a style="color:grey;" href="contact.php"> Contact Us </a></p>   

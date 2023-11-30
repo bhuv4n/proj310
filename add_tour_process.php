@@ -1,5 +1,5 @@
 <?php
-include("C:\xampp\htdocs\db_connection.php");
+include("db_connection.php");
 
 session_start();
 
@@ -15,6 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (mysqli_query($conn, $insert_query)) {
             echo "Tour added successfully!";
+echo "";
 
         } else {
             echo "Error: " . mysqli_error($conn);
@@ -39,6 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 justify-content: center;
                 height: 100vh;
                 margin: 0;
+color: #fff;
                 background-color: #121212;
             }
 
@@ -61,6 +63,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </script>
     </head>
     <body>
+<div>
+<br>
         <button onclick="addt()">Add new tour</button>
+</div>
     </body>
 </html>

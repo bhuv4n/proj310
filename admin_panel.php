@@ -19,6 +19,7 @@ if (!isset($_SESSION["admin_id"])) {
                 justify-content: center;
                 height: 100vh;
                 margin: 0;
+color: white;
                 background-color: #121212;
             }
 
@@ -38,7 +39,7 @@ if (!isset($_SESSION["admin_id"])) {
                 margin-left: 20px;
             }
         </style>
-        <title>Orange Buttons</title>
+        <titleAdmin Panel</title>
         <script>
             function rcx() {
                 window.location.href = 'add_tour.php';

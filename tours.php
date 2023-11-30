@@ -10,7 +10,7 @@ if (!isset($_SESSION["user_id"])) {
 }
 
 // Including your database connection file
-include(C:\xampp\htdocs\db_connection.php");
+include("db_connection.php");
 
 // Fetching available tours from the database
 $tours_query = "SELECT * FROM tours";
