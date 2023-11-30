@@ -68,7 +68,7 @@
                 border-bottom: solid rgb(143, 143, 143) 1px;
                 margin-bottom: 30px;
                 background: none;
-                color: white;
+                color: rgba(255, 255, 255, 0.555);
                 height: 35px;
                 width: 300px;
             }
@@ -96,16 +96,19 @@
                     <h1> CX Login </h1>
                     <br>
                     <br>
-                    <span class="subtitle">Username</span>
+                    <span class="subtitle">USERNAME</span>
                     <br>
                     <input type="text" name="username" value="">
                     <br>
-                    <span class="subtitle">Password</span>
+                    <span class="subtitle">PASSWORD</span>
                     <br>
                     <input type="password" name="password" value="">
                     <br>
                     <br>
                     <input type="submit" value="SUBMIT" class="submit-btn">
+                    <br>
+                    <br>
+                    <p class="subtitle"><a style="color:grey;" href="forgot.php">Forgot password?</a></p>                     
                 </form>
             </div>
         </div>
