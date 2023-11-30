@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Travel Agency</title>
+    <title>Fast Travel Agency</title>
     <style>
         body {
             margin: 0;
@@ -18,7 +18,7 @@
             0% { background: url('https://wallpapers.com/images/featured/scenic-81a8evncb76xosaf.jpg') center/cover no-repeat fixed; }
             33% { background: url('https://i.pinimg.com/originals/78/34/df/7834df02451f1f377a3bf9ac6d5f217b.jpg') center/cover no-repeat fixed; }
             66% { background: url('https://wallpapers.com/images/hd/rain-nature-stones-up206c319tocfysa.jpg') center/cover no-repeat fixed; }
-            100% { background: url('https://wallpapers.com/images/featured/rainy-nature-8djqv0eijjds6bk8.jpg') center/cover no-repeat fixed; } 
+            100% { background: url('https://wallpapers.com/images/featured/rainy-nature-8djqv0eijjds6bk8.jpg') center/cover no-repeat fixed; }
         }
 
         header {
@@ -47,22 +47,24 @@
             text-align: center;
             color: #fff;
         }
+
         h1 {
-            font-family: poppins;
-            font-size: 36px; }
+            font-family: League Gothic;
+            font-size: 55px; 
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <a href="#a">Home</a>
-            <a href="#b">Account</a>
-            <a href="#c">Contact</a>
+            <a href="index.php">Home</a>
+            <a href="login.php">Account</a>
+            <a href="contact.php">Contact</a>
         </nav>
     </header>
 
     <section>
-        <h1>Fast Travel Agenct</h1>
+        <h1>Fast Travel Agency</h1>
         <p>Welcome to an amazing journey around the world!</p>
     </section>
 </body>
