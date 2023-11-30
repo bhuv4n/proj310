@@ -86,7 +86,7 @@ input {
   <div class="content-container">
 <form action="login_process.php" method="post">
         <h1>
-          Login
+          CX Login
         </h1>
         <br>
         <br>
@@ -99,6 +99,7 @@ input {
         <input type="password" name="password" value="">
         <br><br>
         <input type="submit" value="SUBMIT" class="submit-btn">
+</form>
     </div>
   </div>
 </div>
