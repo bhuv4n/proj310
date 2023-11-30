@@ -100,16 +100,19 @@
                     <br>
                     <input type="email" name="email" value="">
                     <br>
-		            <span class="subtitle">Username</span>
+		    <span class="subtitle">Username</span>
                     <br>
                     <input type="text" name="username" value="">
                     <br>
-		            <span class="subtitle">Password</span>
+		    <span class="subtitle">Password</span>
                     <br>
                     <input type="password" name="password" value="">
                     <br>
                     <br>
                     <input type="submit" value="SUBMIT" class="submit-btn">
+                    <br>
+                    <br>
+                    <p style="font-size: 12px; color:grey;">* Email verification required upon successful registration.</p>   
                 </form>
             </div>
         </div>
