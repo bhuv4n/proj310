@@ -107,7 +107,7 @@
                     <br>
                     <input type="submit" value="SUBMIT" class="submit-btn">
                     <br>
-		            <br>
+		    <br>
                     <p style="font-size: 12px; color:grey;">* Administrators cannot reset their passwords.  <a style="color:grey;" href="contact.php"> Contact Us </a></p>   
                 </form>
             </div>
