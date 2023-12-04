@@ -26,7 +26,7 @@ if (!isset($_SESSION["admin_id"])) {
     <input type="text" id="location" name="location" required>
     <br>
     <label for="date">Date:</label>
-<input type="date" name="datePicker" min="<?= date('Y-m-d'); ?>" required>
+<input type="date" id="date" name="date" min="<?= date('Y-m-d'); ?>" required>
 
 
     <br>
