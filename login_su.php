@@ -92,7 +92,7 @@
     <body>
         <div class="flex-container">
             <div class="content-container">
-                <form action="login_process.php" method="post">
+                <form action="admin_login_process.php" method="post">
                     <h1> SU Login </h1>
                     <br>
                     <br>
