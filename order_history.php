@@ -27,6 +27,12 @@ mysqli_close($conn);
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Order History</title>
         <style>
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
             .big-button {
                 display: inline-block;
                 margin: 30px 0;
@@ -34,8 +40,8 @@ mysqli_close($conn);
                 font-size: 16px;
                 text-align: center;
                 text-decoration: none;
-                background-color: #2ecc71;
-                color: #fff;
+                background-color: #121212;
+                color: white;
                 border-radius: 5px;
                 cursor: pointer;
                 transition: background-color 0.3s;
@@ -47,9 +53,15 @@ mysqli_close($conn);
         </style>
     </head>
     <body>
-        <h2>Order History</h2> <?php if (!empty($cart_tours)): ?> <ul> <?php foreach ($cart_tours as $cart_tour): ?> <li>
+<div>
+        <h1>Order History</h1> <?php if (!empty($cart_tours)): ?> <ul> <?php foreach ($cart_tours as $cart_tour): ?> <li>
                 <strong> <?php echo $cart_tour['location']; ?> </strong>
                 <br> Date: <?php echo $cart_tour['date']; ?> <br> Travelers: <?php echo $cart_tour['travelers']; ?> <br>
-            </li> <?php endforeach; ?> </ul> <?php else: ?> <p>no oreder yet..</p> <?php endif; ?> <a href="tours.php" class="big-button">Buy another tour</a>
+            </li> <?php endforeach; ?> </ul> <?php else: ?><?php endif; ?> 
+<span> 2024-01-19</span><strong>  Indonesia: </strong> 3
+<br><br>
+<a href="tours.php" class="big-button">How about you plan a trip?</a><br>
+<a href="dashbaord.php">Back to menu</a>
+</div>
     </body>
 </html>

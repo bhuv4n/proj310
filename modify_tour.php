@@ -20,10 +20,10 @@ if (!isset($_SESSION["admin_id"])) {
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 100px;
         }
 
-        h2 {
+        h1 {
             text-align: center;
         }
 
@@ -44,7 +44,7 @@ if (!isset($_SESSION["admin_id"])) {
         }
 
         input[type="submit"] {
-            background-color: #4caf50;
+            background-color: black;
             color: white;
             padding: 10px 15px;
             border: none;
@@ -53,31 +53,32 @@ if (!isset($_SESSION["admin_id"])) {
         }
 
         input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: gray;
         }
     </style>
 </head>
 <body>
-    <h2>Modify Tour</h2>
+    <h1>Administration</h1>
 
-    <!-- HTML form for modifying tour details -->
     <form action="modify_tour_process.php" method="post">
         <!-- Include fields like tour ID, new location, new date, new capacity, etc. -->
-        <label for="tour_id">Tour ID:</label>
+        <label for="tour_id">Tour code:</label>
         <input type="number" id="tour_id" name="tour_id" required>
 
-        <label for="new_location">New Location:</label>
+        <label for="new_location">Updated location:</label>
         <input type="text" id="new_location" name="new_location" required>
 
-        <label for="new_date">New Date:</label>
-        <input type="date" id="new_date" name="new_date" required>
+        <label for="new_date">Set a date:</label>
+	<input type="date" id="new_date" name="new_date" min="<?= date('Y-m-d'); ?>" required>
 
-        <label for="new_capacity">New Capacity:</label>
+        <label for="new_capacity">Available tickets:</label>
         <input type="number" id="new_capacity" name="new_capacity" required>
 
-        <input type="submit" value="Modify Tour">
+        <input type="submit" value="Save changes">
+<br><br>
+    <a href="admin_panel.php" class="button">Back to menu</a>
     </form>
-    <a href="admin_panel.php" class="button">Return to options</a>
+
 
 </body>
 </body>

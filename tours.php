@@ -10,7 +10,7 @@ if (!isset($_SESSION["user_id"])) {
 }
 
 // Including your database connection file
-include(C:\xampp\htdocs\db_connection.php");
+include("db_connection.php");
 
 // Fetching available tours from the database
 $tours_query = "SELECT * FROM tours";
@@ -35,22 +35,29 @@ mysqli_close($conn);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Available Tours</title>
 </head>
-
+<style>
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
+</style>
 <body>
-    <h2>Welcome,
+    <h1>Welcome,
         <?php echo $_SESSION["username"]; ?>!
-    </h2>
+    </h1>
     <h3>Available Tours</h3>
     <div class="container">
         <div class="content">
             <?php
 
             if (!isset($_SESSION["user_id"])) {
-                echo '<h2>Welcome to FastTravel!</h2>';
+                echo '<h1>Welcome to FastTravel!</h1>';
                 echo '<p>Discover amazing tours and plan your next adventure with us.</p>';
             } else {
 
-                echo '<p>Explore our available tours and start planning your journey.</p>';
+                echo '<p>One stop solution for planning out the best vacation.</p>';
             }
             ?>
         </div>
@@ -61,32 +68,32 @@ mysqli_close($conn);
     <?php if (!empty($tours)): ?>
         <ul>
             <?php foreach ($tours as $tour): ?>
-                <li>
+<br>
                     <strong>
                         <?php echo $tour['location']; ?>
                     </strong>
                     <br>
-                    Date:
+                    Date of expedition:
                     <?php echo $tour['date']; ?>
                     <br>
-                    Capacity:
+                    Spots remaining:
                     <?php echo $tour['capacity']; ?> travelers
                     <br>
                     <!-- Include a form to add selected tours to the shopping cart -->
                     <form action="add_to_cart.php" method="post">
                         <input type="hidden" name="tour_id" value="<?php echo $tour['id']; ?>">
-                        <label for="travelers">Number of Travelers:</label>
-                        <input type="number" id="travelers" name="travelers" min="1" max="5" required>
+                        <label for="travelers">Number of tickets:</label>
+                        <input type="number" id="travelers" name="travelers" min="1" required>
                         <!-- max cap earlier ?php echo $tour['capacity'] ; ?>  -->
                         <input type="submit" value="Add to Cart">
+			<br><br>
                     </form>
-                </li>
             <?php endforeach; ?>
         </ul>
     <?php else: ?>
         <p>No tours available at the moment.</p>
     <?php endif; ?>
-    <a href="customer_choice.php" class="button">Return to options</a>
+    <a href="customer_choice.php" class="button">Back to Menu</a>
 </body>
 
 </html>

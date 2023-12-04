@@ -58,7 +58,7 @@
     <header>
         <nav>
             <a href="index.php">Home</a>
-            <a href="login.php">Account</a>
+            <a href="login.php">Tours</a>
             <a href="contact.php">Contact</a>
         </nav>
     </header>

@@ -16,6 +16,14 @@ if (!isset($_SESSION["admin_id"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Tour</title>
+<style>
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
+</style>
 </head>
 <body>
     <h2>Adding New Tour</h2>
@@ -26,7 +34,8 @@ if (!isset($_SESSION["admin_id"])) {
     <input type="text" id="location" name="location" required>
     <br>
     <label for="date">Date:</label>
-    <input type="date" id="date" name="date" required>
+<input type="date" id="date" name="date" min="<?= date('Y-m-d'); ?>" required>
+
 
     <br>
     <label for="capacity">Capacity:</label>

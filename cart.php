@@ -37,6 +37,14 @@ mysqli_close($conn);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
+<style>
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
+</style>
 </head>
 
 <body>
@@ -45,7 +53,6 @@ mysqli_close($conn);
     <?php if (!empty($cart_tours)): ?>
         <ul>
             <?php foreach ($cart_tours as $cart_tour): ?>
-                <li>
                     <strong>
                         <?php echo $cart_tour['location']; ?>
                     </strong>
@@ -53,24 +60,23 @@ mysqli_close($conn);
                     Date:
                     <?php echo $cart_tour['date']; ?>
                     <br>
-                    Travelers:
+                    Ticktes reserved:
                     <?php echo $cart_tour['travelers']; ?>
                     <br>
-                    <!-- Including a form to delete the tour from the cart -->
                     <form action="delete_from_cart.php" method="post">
                         <input type="hidden" name="tour_id" value="<?php echo $cart_tour['tour_id']; ?>">
-                        <input type="submit" value="Delete from Cart">
+                        <input type="submit" value="Remove from Cart">
                     </form>
-                </li>
+<br><br><br><br>
             <?php endforeach; ?>
         </ul>
 
         <!-- Including a form to proceed to checkout -->
         <form action="checkout_process.php" method="post">
-            <input type="submit" value="Proceed to Checkout">
+            <input type="submit" value="CHECKOUT">
         </form>
     <?php else: ?>
-        <p>Your shopping cart is empty.</p>
+        <p>Your shopping cart is now empty.</p>
     <?php endif; ?>
 </body>
 </html>
